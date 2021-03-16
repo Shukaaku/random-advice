@@ -1,0 +1,61 @@
+{
+	"name": "random-advice",
+	"version": "1.0.0",
+	"description": "Get random advice!",
+	"main": "./dist/index.js",
+	"types": "./typings/index.d.ts",
+	"author": {
+		"name": "1chi",
+		"email": "nyes3704@gmail.com"
+	},
+	"license": "Apache-2.0",
+	"scripts": {
+		"prebuild": "yarn lint && yarn prettify",
+		"build": "tsc && yarn docs",
+		"lint": "eslint --fix src/**/*",
+		"prettify": "prettier . --write",
+		"test": "yarn lint",
+		"docs": "rimraf docs && typedoc --out docs src --theme node_modules/eledoc/bin/default/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Shukaaku/random-advice.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Shukaaku/random-advice/issues"
+	},
+	"keywords": [
+		"advice",
+		"api",
+		"wrapper",
+		"api wrapper",
+		"random",
+		"adviceslip"
+	],
+	"files": [
+		"dist",
+		"typings"
+	],
+	"homepage": "https://shukaaku.github.io/random-advice",
+	"private": false,
+	"dependencies": {
+		"node-superfetch": "^0.1.11"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.31",
+		"@typescript-eslint/eslint-plugin": "^4.15.2",
+		"@typescript-eslint/parser": "^4.15.2",
+		"eledoc": "^0.2.1",
+		"eslint": "^7.20.0",
+		"eslint-config-marine": "*",
+		"eslint-config-prettier": "^8.0.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"prettier": "^2.2.1",
+		"rimraf": "^3.0.2",
+		"typedoc": "^0.20.32",
+		"typescript": "^4.2.2"
+	},
+	"engines": {
+		"node": ">=12"
+	}
+}
