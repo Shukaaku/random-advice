@@ -39,7 +39,7 @@
 	"homepage": "https://shukaaku.github.io/random-advice",
 	"private": false,
 	"dependencies": {
-		"node-superfetch": "^0.1.11"
+		"node-superfetch": "^0.2.2"
 	},
 	"devDependencies": {
 		"@types/node": "^14.14.31",
